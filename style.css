@@ -12,10 +12,8 @@ a {
 }
 
 .container {
-    width: 100%;
-    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
-    padding: 0 1rem;
 }
 
 /* Navbar */
@@ -30,10 +28,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    flex-wrap: wrap;
 }
 
 .nav-logo {
@@ -56,11 +51,7 @@ a {
     list-style: none;
     display: flex;
     gap: 1.5rem;
-    transition: none;
-}
-
-.menu-toggle {
-    display: none;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
 .nav-link {
@@ -73,6 +64,45 @@ a {
 .nav-link:hover,
 .nav-link.active {
     color: #00ff88;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vw;
+        background-color: #111;
+        padding: 10px 0;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        max-height: 500px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+        padding: 10px;
+        user-select: none;
+        z-index: 1000;
+    }
+}
+
+/* Desktop: hide menu toggle */
+.menu-toggle {
+    display: none;
 }
 
 /* Hero Section */

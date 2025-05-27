@@ -1,13 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // ==== Mobile Menu Toggle ====
-    const mobileMenu = document.getElementById('mobile-menu');
-    const navMenu = document.querySelector('.nav-menu');
 
-    if (mobileMenu && navMenu) {
-        mobileMenu.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-    }
 
     // ==== Newsletter Subscription ====
     const form = document.getElementById('newsletter-form');

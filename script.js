@@ -9,32 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // ==== Dropdown Menu Toggle ====
-    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-
-    dropdownToggles.forEach(toggle => {
-        toggle.addEventListener('click', function (e) {
-            const parent = this.parentElement;
-
-            // Close all other dropdowns
-            document.querySelectorAll('.nav-dropdown').forEach(drop => {
-                if (drop !== parent) drop.classList.remove('open');
-            });
-
-            // Toggle current dropdown
-            parent.classList.toggle('open');
-        });
-    });
-
-    // Close dropdowns when clicking outside
-    document.addEventListener('click', function (e) {
-        if (!e.target.closest('.nav-dropdown')) {
-            document.querySelectorAll('.nav-dropdown').forEach(drop => {
-                drop.classList.remove('open');
-            });
-        }
-    });
-
     // ==== Newsletter Subscription ====
     const form = document.getElementById('newsletter-form');
     const emailInput = document.getElementById('email-input');

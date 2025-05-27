@@ -335,3 +335,8 @@ a {
     margin-top: 2rem;
     font-size: 0.9rem;
 }
+@media {
+    .nav-dropdown {
+        width: 100%;
+    }
+}

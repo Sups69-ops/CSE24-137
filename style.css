@@ -12,8 +12,10 @@ a {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 /* Navbar */
@@ -21,13 +23,17 @@ a {
     background-color: #1a1a1a;
     padding: 1rem 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    position: relative; /* IMPORTANT for absolutely positioned nav-menu */
+    position: relative;
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .nav-logo {
@@ -50,49 +56,9 @@ a {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    transition: none;
 }
 
-/* Mobile menu styles and animation */
-.nav-menu {
-    /* Default desktop styles */
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-}
-
-@media (max-width: 768px) {
-    .nav-menu {
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background-color: #111;
-        padding: 10px 0;
-        max-height: 0;        /* Hide */
-        overflow: hidden;
-        opacity: 0;
-        pointer-events: none; /* Prevent clicking when hidden */
-        z-index: 999;
-    }
-
-    .nav-menu.active {
-        max-height: 500px;   /* Enough height to show menu */
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    /* Show menu toggle */
-    .menu-toggle {
-        display: block;
-        font-size: 24px;
-        cursor: pointer;
-        color: #fff;
-        padding: 10px;
-        user-select: none;
-        z-index: 1000; /* On top of nav-menu */
-    }
-}
-
-/* Desktop: hide menu toggle */
 .menu-toggle {
     display: none;
 }
@@ -334,9 +300,4 @@ a {
     border-top: 1px solid #333;
     margin-top: 2rem;
     font-size: 0.9rem;
-}
-@media {
-    .nav-dropdown {
-        width: 100%;
-    }
 }

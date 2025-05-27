@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Arcadia Games</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+<header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <i class="fas fa-gamepad"></i>
+                <h2 class="logo-text">Arcadia Games</h2>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a class="nav-link active" href="Home.html">Home</a></li>
+                <li><a class="nav-link" href="Browse.html">Browse</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link" href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="hero-section">
+    <div class="hero-content">
+        <h1 class="main-title">Welcome to Arcadia Games</h1>
+        <p class="hero-text">Discover the ultimate collection of games. New adventures await you!</p>
+        <div class="cta-buttons">
+            <a href="Browse.html" class="cta-button primary">Explore Games</a>
+            <a href="about.html" class="cta-button secondary">Learn More</a>
+        </div>
+    </div>
+</main>
+
+<!-- ✅ Featured Games Section -->
+<section class="featured-games">
+    <div class="container">
+        <h2>Featured Games</h2>
+        <div class="games-grid">
+            <div class="game-card"><img src="images/image1.jpg" alt="Game 1"><h3>Destiny</h3></div>
+            <div class="game-card"><img src="images/image2.jpg" alt="Game 2"><h3>Far Cry</h3></div>
+            <div class="game-card"><img src="images/image3.jpg" alt="Game 3"><h3>Star Wars KOTOR</h3></div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ✅ Footer with Email Subscription -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Arcadia Games</h3>
+                </div>
+                <p>Your ultimate destination for gaming adventures. Discover, play, and enjoy the best collection of games.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Browse.html">Browse</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Subscribe</h4>
+                <form class="subscribe-form" id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required id="email-input">
+                    <button type="submit">Subscribe</button>
+                    <div id="success-message" style="display: none; color: #00ff88; margin-top: 10px;">✓ Subscribed successfully!</div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Arcadia Games. All rights reserved.</p>
+            <p>Made with <i class="fas fa-heart" style="color: #e74c3c;"></i> for gamers worldwide</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

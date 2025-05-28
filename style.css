@@ -319,7 +319,7 @@ a {
 /*news*/
 .news-article img.news-thumb {
     width: 100%;
-    max-width: 100px; /* Reduce this to shrink image size */
+    max-width: 130px; /* Reduce this to shrink image size */
     height: auto;
     display: block;
     margin-bottom: 10px;

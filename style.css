@@ -316,3 +316,10 @@ a {
     margin-top: 2rem;
     font-size: 0.9rem;
 }
+.news-page .game-card img {
+    width: 100%;
+    max-width: 250px; /* or any smaller size you prefer */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

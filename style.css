@@ -174,7 +174,7 @@ a {
 
 .game-card img {
     display: block;
-    max-width: 100%;
+    max-width: 250px%;
     max-height: 160px;
     width: auto;
     height: auto;

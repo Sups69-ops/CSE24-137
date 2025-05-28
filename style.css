@@ -174,7 +174,7 @@ a {
 
 .game-card img {
     display: block;
-    max-width: 250px%;
+    max-width: 100%;
     max-height: 160px;
     width: auto;
     height: auto;
@@ -316,10 +316,11 @@ a {
     margin-top: 2rem;
     font-size: 0.9rem;
 }
-.news-page .game-card img {
+.news-article img.news-thumb {
     width: 100%;
-    max-width: 250px; /* or any smaller size you prefer */
+    max-width: 300px; /* Reduce this to shrink image size */
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
 }
